@@ -50,7 +50,7 @@
 		velocity: 0,
 		animation: [0, 1, 2, 3],
 		rotation: 0,
-		raduis: 12,
+		radius: 12,
 		gravity: 0.25,
 		_jump: 4.6,
 
@@ -121,17 +121,18 @@
 				var p = this._pipes[i];
 
 				if (i === 0) {
-					var cx = 	Math.min(Math.max(bird.x, p.x), p.x+p.width);
+					var cx 	= Math.min(Math.max(bird.x, p.x), p.x+p.width);
 					var cy1 = Math.min(Math.max(bird.y, p.y), p.y+p.height);
 					var cy2 = Math.min(Math.max(bird.y, p.y+p.height+80), p.y+2*p.height+80);
 
-					var dx = bird.x - cx;
+					var dx 	= bird.x - cx;
 					var dy1 = bird.y - cy1;
 					var dy2 = bird.y - cy2;
 
 					var d1 = dx*dx + dy1*dy1;
 					var d2 = dx*dx + dy2*dy2;
 					var r = bird.radius*bird.radius;
+
 					if (r > d1 || r > d2) {
 						currentState = states.Score;
 					}
