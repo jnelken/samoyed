@@ -69,14 +69,18 @@ function initSprites(img) {
 	};
 
 	s_score  = new Sprite(img, 138,  56, 113, 58);
-	s_splash = new Sprite(img,   0, 114,  59, 49);
+	s_splash = new Sprite(img,   0, 130,  59, 47);
+
+	var samoyedG = new Image();
+	samoyedG.src = "res/samoyed_grey.gif";
+	s_samoyedG = new Sprite(samoyedG, 0, 0,  32, 32);
 
 	s_numberS = new Sprite(img, 0, 177, 6,  7);
 	s_numberB = new Sprite(img, 0, 188, 7, 10);
 
 	s_numberS.draw = s_numberB.draw = function(ctx, x, y, num, center, offset) {
 		num = num.toString();
-		
+
 		var step = this.width + 2;
 
 		if (center) {

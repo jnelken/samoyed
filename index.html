@@ -283,7 +283,8 @@
 		var midX = width/2;
 
 		if (currentState === states.Splash) {
-			s_splash.draw(ctx, midX - s_splash.width/2, height - 300);
+			s_samoyedG.draw(ctx, midX - s_samoyedG.width/2, height - 320);
+			s_splash.draw(ctx, midX - s_splash.width/2, height - 250);
 			s_text.GetReady.draw(ctx, midX - s_text.GetReady.width/2, height-380);
 		}
 		if (currentState === states.Score) {
