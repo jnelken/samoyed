@@ -121,7 +121,7 @@
 
 		update: function() {
 			if (frames % 100 === 0) {
-				var _y = height - (s_pipeSouth.height+s_fg.height) - (120 + 200*Math.random());
+				var _y = height - (s_pipeSouth.height+s_fg.height) - (120*size - 20*size + 200*Math.random()/(size/1.3));
 				this._pipes.push({
 					x: 500,
 					y: _y,
