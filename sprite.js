@@ -40,10 +40,10 @@ function initSprites(img) {
 		// new Sprite(img, 156, 115, 17, 12),
 		// new Sprite(img, 156, 128, 17, 12),
 		// new Sprite(img, 156, 141, 17, 12)
-		new Sprite(samoyed_img1, 0, 0, 64, 64),
-		new Sprite(samoyed_img2, 0, 0, 64, 64),
-		new Sprite(samoyed_img3, 0, 0, 64, 64),
-		new Sprite(samoyed_img4, 0, 0, 64, 64)
+		new Sprite(samoyed_img1, 0, 0, 32, 32),
+		new Sprite(samoyed_img2, 0, 0, 32, 32),
+		new Sprite(samoyed_img3, 0, 0, 32, 32),
+		new Sprite(samoyed_img4, 0, 0, 32, 32)
 	];
 
 
